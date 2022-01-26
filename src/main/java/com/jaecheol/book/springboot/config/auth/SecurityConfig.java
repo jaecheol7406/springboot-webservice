@@ -1,4 +1,4 @@
-package com.jaecheol.book.springboot.config.auth;
+package com.jaecheol.book.springboot.config.auth; // config.auth 패키지 : 시큐리티 관련된 모든 클래스를 담는 곳.
 
 import com.jaecheol.book.springboot.domain.user.Role;
 import lombok.RequiredArgsConstructor;
@@ -7,7 +7,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 @RequiredArgsConstructor
-@EnableWebSecurity
+@EnableWebSecurity // Spring Security 설정들을 활성화 시켜줌.
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private final CustomOauth2UserService customOauth2UserService;
 
